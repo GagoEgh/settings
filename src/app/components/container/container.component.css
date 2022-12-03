@@ -1,0 +1,10 @@
+.block{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.active{
+    background-color: rgb(87 162 225 / 77%);
+    color: white;
+}

@@ -1,0 +1,17 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: 50px auto;
+}
+
+.add{
+    align-self: end;
+}
+
+.btn{
+    width: 120px;
+    padding: 5px;
+    margin: 20px 0;
+}

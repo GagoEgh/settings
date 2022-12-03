@@ -1,0 +1,16 @@
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.bar{
+    background-color: rgb(87 162 225 / 77%);
+    height: 60px;
+}
+
+.main{
+    background-color: #ebebeb;;
+    height: calc(100% - 60px);
+}
