@@ -1,31 +1,35 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { SettingsService } from './services/setting.service';
 import { AppComponent } from './app.component';
-import {
-  ContainerComponent, DataComponent, DatasComponent, SettingComponent,
-  SideNavComponent, TodoComponent, TodosComponent, TopBarComponent
-} from './components';
+
 import { FormsModule } from '@angular/forms';
+import {
+  HeaderComponent,
+  MainComponent,
+  SettingsComponent,
+  SettingsDataComponent,
+  SideBarComponent,
+  TodoComponent
+} from './components';
+import { SideBarService } from './services/side-bar.service';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopBarComponent,
-    TodosComponent,
-    SideNavComponent,
-    SettingComponent,
-    ContainerComponent,
-    DatasComponent,
-    DataComponent,
-    TodoComponent
+    SideBarComponent,
+    HeaderComponent,
+    MainComponent,
+    TodoComponent,
+    SettingsComponent,
+    SettingsDataComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [SettingsService],
+  providers: [SideBarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

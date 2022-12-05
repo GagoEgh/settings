@@ -26,10 +26,12 @@ export class TodoComponent implements OnInit {
     if (this.title === '' || this.description === '') {
       return
     }
+
     const todo: ITodo = {
       title: this.title,
       description: this.description,
     }
+    
     this.todos.push(todo);
     this.title = '';
     this.description = ''

@@ -1,5 +1,5 @@
-export interface ISettings{
-    title:string,
-    url:string,
-    isChecked:boolean
+export interface ISettings {
+    title: string,
+    url: string,
+    isChecked: boolean
 }
