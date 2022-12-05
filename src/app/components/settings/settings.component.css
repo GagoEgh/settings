@@ -1,6 +1,10 @@
-.container{
+.wrap{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+}
+
+.row{
+    margin-left: 200px;
     margin-top: 30px;
 }
 
@@ -10,4 +14,12 @@
     font-size: 16px;
     padding: 5px;
     margin-top: 20px;
+}
+
+.btn1{
+    align-self: flex-end;
+}
+
+.btn2{
+    align-self: center;
 }

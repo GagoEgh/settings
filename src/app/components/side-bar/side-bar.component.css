@@ -1,0 +1,13 @@
+.offcanvas{
+    position: absolute;
+    visibility: unset;
+    left: 0;
+    top: 56px;
+    border: 1px solid;
+    transform: translateX(-250px);
+    width: 250px;
+}
+
+.bar{
+    transform: translateX(0);
+}

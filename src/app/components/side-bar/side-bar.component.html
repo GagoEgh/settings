@@ -1,0 +1,14 @@
+<div class="offcanvas text-bg-dark navbar-dark bg-dark" aria-labelledby="offcanvasDarkNavbarLabel"
+    [class.bar]="showSideBar()">
+    <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+           
+            <li class="nav-item" *ngFor="let setting of getSettings(),let ind=index">
+                <a class="nav-link " [class.active]="ind===0" aria-current="page" href="#">
+                    {{setting.title}}
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>

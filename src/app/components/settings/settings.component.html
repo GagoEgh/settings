@@ -1,0 +1,11 @@
+<div class="wrap">
+    <div class="btn1">
+        <button type="button" class="btn btn-outline-primary" (click)="add()">Add</button>
+    </div>
+    <div *ngFor="let setting of settings">
+        <app-settings-data class="row g-3" [setting]="setting"></app-settings-data>
+    </div>
+    <div class="btn2">
+        <button type="button" class="btn btn-outline-primary" *ngIf="showSaveBtn()" (click)="save()">Save</button>
+    </div>
+</div>

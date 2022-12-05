@@ -1,0 +1,15 @@
+.container{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav{
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.nav-link{
+    width: 200px;
+}
+

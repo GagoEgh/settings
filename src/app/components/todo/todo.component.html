@@ -1,1 +1,18 @@
-<p>{{todo.title}}-{{todo.description}}</p>
+<div class="container">
+    <div class="row g-3">
+        <div >
+            <input [(ngModel)]="title" type="text" class="form-control" placeholder="title">
+        </div>
+        <div >
+            <input type="text" [(ngModel)]="description"  class="form-control" placeholder="description">
+        </div>
+        <button class="btn btn-outline-primary" (click)="add()">submit</button>
+    </div>
+    <div >
+        <ul>
+            <li *ngFor="let todo of todos">
+               <p> {{todo?.title}}-{{todo?.description}}</p>
+            </li>
+        </ul>
+    </div>
+</div>
